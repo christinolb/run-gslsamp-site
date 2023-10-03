@@ -31,7 +31,7 @@ export default function Nav() {
               <li><Link href="/">Home</Link></li>
               <li><li><Link href="/">About Us</Link></li></li>
               <li><Link href="/">Membership</Link></li>
-              <li><li><Link href="/events">Events & Opportunities</Link></li></li>
+              <li><li><Link href="/">Events & Opportunities</Link></li></li>
               <li><Link href="/">Contact</Link></li>
           </ul>
         </div>
