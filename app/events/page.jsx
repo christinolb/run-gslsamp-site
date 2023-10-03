@@ -113,7 +113,7 @@ export default function Events() {
         {/**NEWSLETTER AND PAST EVENTS*/}
         <div className='grid grid-rows-2'>
 
-          <h1 className="text-[2rem]  flex font-bold mt-3 hover:underline hover:scale-105 transition delay-75 w-1/4">
+          <h1 className="text-[2rem]  flex font-bold mt-3 hover:underline w-1/4">
               <a href='https://dailystoic.com/daily-stoic-email/' target='_blank'>Weekly Newsletter</a>
           </h1>
           <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
@@ -125,7 +125,7 @@ export default function Events() {
         </div>
 
         <div className='flex justify-center'>
-          <h1 className="text-[2rem] justify-center flex font-bold mt-[4rem] p-7 w-1/3 hover:underline hover:scale-105 transition delay-75"><Link href='/events/pastevents'>Also check out our Past Events!</Link></h1>
+          <h1 className="text-[2rem] justify-center flex font-bold mt-[4rem] p-7 w-1/3 hover:underline"><Link href='/events/pastevents'>Also check out our Past Events!</Link></h1>
         </div>
       </div>
     </>
