@@ -91,7 +91,7 @@ export default function Events() {
                       {/**e.description*/}
                     </p>
                   </div>
-              ))
+              )) 
             }
         </div>
         </div>
