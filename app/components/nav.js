@@ -29,10 +29,10 @@ export default function Nav() {
         <div class="bottom-nav-container">
           <ul class="nav-page-list">
               <li><Link href="/">Home</Link></li>
-              <li><li><Link href="/about">About Us</Link></li></li>
-              <li><Link href="/membership">Membership</Link></li>
+              <li><li><Link href="/">About Us</Link></li></li>
+              <li><Link href="/">Membership</Link></li>
               <li><li><Link href="/events">Events & Opportunities</Link></li></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/">Contact</Link></li>
           </ul>
         </div>
       </nav>

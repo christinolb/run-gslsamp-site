@@ -1,11 +1,9 @@
 'use client'
 
 import Title from '../components/title'
-import Image from 'next/image';
-import placeHolder from '/public/placeholder.png'
+
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { document } from 'postcss';
 
 {/**create component for events & pull data from database*/}
 
@@ -55,15 +53,6 @@ export default function Events() {
   return (
     <>
       <Title title={"EVENTS & OPPORTUNITIES"} />
-      {/**AUTO SCROLLING IMAGES */}
-      <div className='flex justify-center'>
-          <Image
-            src={placeHolder}
-            alt='Placeholder Image'
-            height={500}
-            width={500}
-          />
-        </div>
       
       <div className='h-full m-8 p-4'>
 

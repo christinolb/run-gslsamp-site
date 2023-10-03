@@ -29,7 +29,7 @@ export const config = {
             const myDB = client.db('web_content_test');
 
             //select cluster
-            const myColl = myDB.collection("events");
+            const myColl = myDB.collection("events_opp_test");
 
             //query data for present and past
             const queryPres = { past: "NO" };

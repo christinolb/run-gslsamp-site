@@ -11,7 +11,7 @@ const inter = Inter({
  })
 
 export const metadata: Metadata = {
-  title: 'RUN GSLSAMP',
+  title: 'RUN GSLSAMP DEMO',
   description: 'RUTGERS NEWARK GSLSAMP',
 }
 
