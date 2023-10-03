@@ -36,6 +36,7 @@ export default function Events() {
 
       //set event(s)
       setEvent(resp.responsePres)
+      setRecentEvent(resp.responsePast)
     }
   }
   
@@ -76,27 +77,23 @@ export default function Events() {
         
         {/**RECENT EVENTS*/}
         <div className=''>
-          <span className='bg-white text-[2rem] flex pt-10 font-bold'>Recent Events</span>
+          <span className='bg-white text-[2rem] flex pt-10 font-bold'>Past Events</span>
           <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
-
-          {/**Placeholder */}
-          <p className='px-9 m-9 text-center'>
-            <i>We're still working on this check back soon</i>
-          </p>
-          {/**
-            recentEvent.map((e) => (
-            <>
-              <h1 className='underline text-xl p-7'>{e.title}</h1>
-              <p className='font-bold px-9'>{e.location}</p>
-              <p className='font-bold px-9'>{e.date}</p>
-              <p className='font-bold px-9'>{e.startTime} - {e.endTime}</p>
-              <p className='px-9'>
-                {e.description}
-              </p>
-            </>
-            ))
-            */
-          }
+          <div className='flex flex-cols w-3/5 '>
+            {
+              recentEvent.map((e) => (
+                  <div id="description" onMouseDown={description} className='m-[25px] p-[15px] w-1/2 shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] hover:scale-105 transition delay-75'>
+                    <h1 className='underline text-xl p-5 text-[1.7rem] '>{e.title}</h1>
+                    <p className='font-bold px-9 text-[1.15rem]'>{e.location}</p>
+                    <p className='font-bold px-9 text-[1.15rem]'>{e.date}</p>
+                    <p className='font-bold px-9 text-[1.15rem]'>{e.startTime} - {e.endTime}</p>
+                    <p className='px-9 py-2 text-[1.30rem]'>
+                      {/**e.description*/}
+                    </p>
+                  </div>
+              ))
+            }
+        </div>
         </div>
 
         {/**NEWSLETTER AND PAST EVENTS*/}
